@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="resources/css/css.css">
+</head>
+<body>
+<header>
+    <nav>
+        <h1>Danyl Ovcharov</h1>
+        <div id="menu">
+            <ul>
+                <li><img src="resources/img/menu.png" width="130%" height="130%"></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects ">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+<main>
+    <section id="about">
+        <article>
+            <h2>About me</h2>
+            <p>Hi, my name is Danyl Ovcharov and I’m from Ukraine. I’ve already been Marine Engineer for 6 years and now
+                decided to do something else.
+                Now I’m learning Front-End Engineering and at this period of time it became my main hobby.
+                I hope, that in the future it will become more than just hobby. I think that everyone can
+            change their style of life, you need only put some efforts to it.</p><br>
+            <p>This page is made for practicing HTML&CSS and
+                vanilla JavaScript. It’s part of Codecademy project. Down below you can find my other projects. </p><br>
+            <p>P.S. I have a cute dog, you can find more of her photos on one of my projects. Check my Projects to see her.</p>
+        </article>
+        <div>
+            <img src="resources/img/photo.jpg">
+        </div>
+    </section>
+    <section>
+        <h2>Projects</h2>
+        <p>Because I started to learn Front-End Engineering not long time ago, I made not so much Projects.
+            I hope in the future this section will be updated.
+        </p>
+        <div id="projects" class='custom-select'>
+            <div id="selector">
+                <button onclick='toggle()'>Check Me</button>
+                <ul>
+                    <li onclick="showCorgi()">Corginication</li>
+                    <li onclick="showList()">Shopping List</li>
+                </ul>
+            </div>
+            <div id="panel">
+                <div class="panels">
+                    <article>
+                        <p><strong>Corginication</strong>
+                            <br>
+                            My first project. This website was made for advertising business of my dog. Additional goal
+                            of this website is mastering my first steps at HTML&CSS.
+                            In this project for making responsive website I was using media query and flex-boxes.
+                        </p><br>
+                        <p>Click <a href="https://villainantagonist.github.io/corginication/">Here</a> to check it.</p>
+                    </article>
+                    <img src="resources/img/Corginication.png">
+                </div>
+                <div class="panels">
+                    <article>
+                        <p>
+                            <strong>Shopping List</strong>
+                            <br>
+                            This website was made as a final project of Clyde Mattew DOM Courses. Is this project
+                            JavaScript was used to dynamically change DOM.
+                            I also made some
+                            improvement.
+                        </p>
+                        <br>
+                        <p>Click <a href="https://villainantagonist.github.io/ShoppingList/">Here</a> to check it.</p>
+                    </article>
+                    <img src="resources/img/ShopingList.png">
+                </div>
+            </div>
+        </div>
+        <p>If you have advises regardless my Projects, please
+            contact me or leave a comment in Codecademy forum.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills:</h2>
+        <div id="image-container">
+            <figure>
+                <img src="resources/img/HTML.svg">
+                <figcaption>HTML</figcaption>
+            </figure>
+            <figure>
+                <img src="resources/img/CSS.svg">
+                <figcaption>CSS3</figcaption>
+            </figure>
+            <figure>
+                <img src="resources/img/JavaScript.svg">
+                <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure>
+                <img src="resources/img/github.svg">
+                <figcaption>GitHub</figcaption>
+            </figure>
+            <figure>
+                <img src="resources/img/npm.svg">
+                <figcaption>NPM</figcaption>
+            </figure>
+
+        </div>
+    </section>
+</main>
+<footer>
+    <section id="contacts">
+        <article>
+            <h2>
+                Contacts
+            </h2>
+            <p>Have advices regardless my projects? Please contact me:</p>
+        </article>
+        <div>
+            <a href="mailto:valefor04@gmail.com">
+                <img src="resources/img/gmail.svg"></a>
+            <a href="https://github.com/VillainAntagonist">
+                <img src="resources/img/github.svg">
+            </a>
+        </div>
+    </section>
+</footer>
+<script src="resources/js/main.js"></script>
+</body>
+</html>
+
+

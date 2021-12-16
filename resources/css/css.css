@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    width: 100%;
+    font-family: Times;
+    /*overflow: hidden;*/
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    padding-right: 1% ;
+}
+nav {
+    justify-content: space-between;
+display: inline-flex;
+    align-items: center;
+    align-content: center;
+}
+#menu {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 20rem;
+}
+nav ul {
+justify-content: flex-end;
+    display: inline-flex;
+    width: auto;
+    height: 40px;
+overflow: hidden;
+    position: relative;
+    left: 87%;
+
+}
+nav ul li {
+    justify-content: center;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    width: auto;
+
+}
+nav ul:hover {
+    animation: navAnimat 1s linear forwards
+}
+
+nav ul li a {
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none ;
+    align-content: center;
+    align-items: center;
+    color: black;
+    font-size: 0.9rem;
+}
+@keyframes navAnimat {
+    0%{
+        left: 87%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+h1{
+    width: auto;
+    padding-left: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    padding: 1%;
+}
+section {
+    padding: 2%;
+}
+h2 {
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+}
+#about{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 0;
+    margin-top: 0;
+}
+#about article{
+
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+}
+#about div {
+    max-width: 30%;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+#about img{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 4px 6px rgba(0, 0, 0, 0.45);
+}
+.custom-select {
+    width: 140px;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-select p {
+    color: black;
+    padding: 5px 10px;
+}
+
+.custom-select ul{
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    border: 2px solid black;
+    border-bottom: none;
+    border-radius: 10px;
+}
+
+.custom-select ul li {
+    padding: 3px 10px;
+    border-bottom:  2px solid black;
+}
+
+.custom-select ul li:hover{
+
+}
+
+.shown ul {
+    visibility: visible;
+    height: 3.6rem;
+
+}
+
+button{
+    border: none;
+    background-color: bisque;
+    font-size: 1em;
+    text-align: left;
+    font-weight: bolder;
+    font-family: Times;
+    width: 5rem;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: chocolate;;
+    border-radius: 10px;
+}
+
+#projects {
+    justify-content: space-between;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1% 0;
+}
+#selector {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#panel {
+    position: relative;
+    max-height: 80%;
+    max-width: 80%;
+}
+.panels  {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    visibility: visible;
+    opacity: 0;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 4px 6px rgba(0, 0, 0, 0.45);
+}
+.panels article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 15rem;
+}
+.panels article a{
+    text-decoration: none;
+    color: chocolate;
+}
+.panels article a:hover{
+    background-color: bisque;
+    border-radius: 10px;
+}
+.panels img {
+    width: 30rem;
+    height: auto;
+    border-left: 1px solid black;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 4px 6px rgba(0, 0, 0, 0.45);
+}
+.showPanel {
+    position: relative;
+    width: 45rem;
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#skills{
+padding-bottom: 0;
+}
+#image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 1% 2%;
+}
+#image-container figure,figcaption {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-container img {
+    height: 3rem;
+    width: auto;
+}
+footer {
+    max-width: 100%;
+    padding:0 1%;
+}
+#contacts div {
+    padding-top: 1%;
+}
+#contacts img{
+    padding-right: 0.5rem;
+    height: 1.5rem;
+    width: auto;
+}
